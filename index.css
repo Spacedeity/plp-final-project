@@ -6,15 +6,14 @@
 }
 
 body{
-  
+  z-index: -1000;
   background-size:cover;
   background-image: url("images/hotel2.jpg");
-   background-attachment:fixed;
+  background-attachment: fixed;
    background-repeat: no-repeat;
-   z-index: -100;
-   /* display: flex; */
+   display: flex;
    justify-content: center;
-   align-items: center;
+   
    flex-direction: column;
   
 }  
@@ -22,7 +21,7 @@ body{
    /* navigation sector styling */
    header{
     height:50px;
-    
+  
    }
    nav {
     width:100%;
@@ -64,6 +63,7 @@ body{
     font-size: 1rem;
     font-weight: 400;
     font-family: Roboto;
+   
   }
   
   li {
@@ -87,46 +87,50 @@ height: 300px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-backdrop-filter: blur(5px);
+backdrop-filter: blur(10px);
 
 }
 
 h{
-  color: rgb(176, 238, 126);
+  color: rgb(228, 245, 244);
   font-family: Gabriela Stencil;
-  font-size: 70px;
+  font-size: 2.5rem;
   text-align: center;
   
 }
 
 
 .typeWriter {
-  font-size: 1.5rem;
-  color:#eeecec;
+  font-size: 1.2rem;
+  color:#f0f2fc;
   font-family:Gabriela Stencil;
+  font-weight: 400;
 }
 
 
 h2 {
-  font-size: 2rem;
-color:rgb(252, 251, 251);
+  font-size: 1.5rem;
+color:rgb(236, 241, 248);
 text-align: center;
 font-family: Gabriela ;
+font-weight: 400;
 }
 
 
 p1{
-  font-size: 1.8rem;
-  color:#fdfcfc;
+  font-size: 1.3rem;
+  color:#e5e5f7;
   font-family: Gabriela Stencil;
   text-align: center;
+  font-weight: 400;
 }
 
 .main{
-  display:flex;
+  
+  display:grid;
   margin-top: 30px;
   height: 700px;
-  /* background-color:  #7edcec8e ; */
+ grid-template-columns: 1fr 1fr 1fr;
   
   }
   .card-title{
@@ -151,10 +155,9 @@ p1{
     }
     
     .card-1,.card-2,.card-3{
-
     margin-top: 20px;
-    height:540px;
-    width:400px;
+    height:340px;
+    width: 300px;
     border: solid 1px rgb(85, 84, 84);
     border-radius: 10px;
     text-overflow: clip;
@@ -164,8 +167,8 @@ p1{
     flex-direction: column;
     transition-duration: 300ms;
     /* backdrop-filter: blur(50px); */
-    background-color:  #7edcec8e ;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.945);                   
+    background-color:  #272727 ;
+    /* box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.945);                    */
         }
     
 
@@ -242,7 +245,9 @@ background-image: linear-gradient( 109.6deg,  rgba(45,116,213,1) 11.2%, rgba(121
 }
 
 @media screen and (max-width:540px) {
-
+ nav{
+  z-index: 10000;
+ }
   .box{
     margin-top: 50px;
     height: 300px;
@@ -259,7 +264,7 @@ background-image: linear-gradient( 109.6deg,  rgba(45,116,213,1) 11.2%, rgba(121
     
     .typeWriter {
       font-size: 1rem;
-      color:#eeecec;
+      color:#cac8c8;
       font-family:Gabriela Stencil;
     }
     
@@ -276,15 +281,16 @@ background-image: linear-gradient( 109.6deg,  rgba(45,116,213,1) 11.2%, rgba(121
     }
   .main{
     top: 280px;
-    flex-direction: column;
+    /* flex-direction: column; */
       align-items: center;
       height: auto;
+  display: block;
       
   }
   .card-1, .card-2, .card-3 {
     
-    width: 180px;
-    height: 220px;
+    width: 350px;
+    height: 300px;
     border-radius: 5px  ;
     margin-bottom: 20px;
     align-self: center;
